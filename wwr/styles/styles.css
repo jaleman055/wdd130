@@ -1,6 +1,11 @@
-main {
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+#content {
   max-width: 1600px;
   margin: 0 auto;
+  
 }
 
 nav a {
@@ -9,10 +14,23 @@ nav a {
 
 #hero-msg h1 {
   text-align: center;
+  text-decoration: none;
+  font-family: "Montserrat", "sans-serif";
+  font-size: 2em;
+  color: #f9f6f6;
+  margin: 0;
+  padding: 0;
 }
 
 #hero-msg h4 {
   text-align: center;
+  text-decoration: none;
+  font-family: "Open Sans", "Montserrat";
+  font-size: 1.5em;
+  color: #f9f6f6;
+  margin: 0;
+  padding: 0;
+
 }
 
 .button-box {
@@ -21,33 +39,65 @@ nav a {
 
 main section {
   text-align: center;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 #background {
   height: 725pxpx;
-  background-color: #25262c;
+  background-color: #00343d;
 }
 
 body {
-  background-color: #25262c;
+  font-family: "Montserrat", "sans-serif";
+  color : #e0e7e9;
+  background-color: #00343d;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+
+
 }
 
 header {
-  background-color: #575e72;
+  background-color: #ffd633;
+  color: #0b0b0b;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: "Montserrat", "sans-serif";
+  padding: 0;
+  
+  
+}
+
+
+nav a {
+  background-color: #ffd633;
+  color: #f9f6f6;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: "Montserrat", "sans-serif";
+  
 }
 
 nav a:hover {
-  background-color: #7a80bf;
+  background-color: #ffd633;
+  text-decoration: none;
 }
 
 .book,
 .join {
-  background-color: #575e72;
+  color:#e0e7e9;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-size: 1.5em;
 }
 
 .book:hover,
 .join:hover {
   background-color: #bdc0ea;
+  text-decoration: none;
 }
 
 #background {
@@ -59,11 +109,12 @@ nav a:hover {
 }
 
 footer {
-  background-color: rgb(94, 100, 112) !important;
+  background-color: rgb(84, 80, 19);
 }
 
 nav a {
-  color: #25262c;
+  color: #0a9843;
+  padding: 35px;
 }
 
 nav a:hover {
@@ -81,11 +132,22 @@ h4 {
 .book,
 .join {
   color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+main section img {
+    box-sizing: border-box;
 }
 
 .book:hover,
 .join:hover {
-  color: black;
+  color: rgb(129, 25, 77);
+  text-decoration: none;
 }
 
 .msg h2 {
@@ -97,15 +159,18 @@ h4 {
 }
 
 footer {
-  color: rgb(255, 255, 255) !important;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 footer a {
-  color: rgb(255, 255, 255) !important;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 footer a:hover {
-  color: rgb(94, 100, 112) !important;
+  color: rgb(129, 25, 77);
+  text-decoration: none;
 }
 
 .icon {
