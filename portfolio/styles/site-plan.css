@@ -53,12 +53,19 @@ header {
   
 
 a {
-    color: var(--accent1-color);
+    color: var(--accent2-color);
     text-decoration: none;
+    border: 1px solid var(--accent2-color);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin: 0.5em;
+    display: inline-block;
+
+
 }
 
 a:hover {
-    color: var(--accent2-color);
+    color: var(--accent1-color);
 }
 
 .container {
