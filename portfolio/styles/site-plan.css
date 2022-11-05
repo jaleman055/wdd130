@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 
-
 :root {
     --primary-color: #343637;
     --secondary-color: #0C0C0C;
     --accent1-color: #A2221D;
     --accent2-color: #B7BFC1;
+    --paragraph-background-color: #292f31;
     --heading-font: "Open Sans";
     --paragraph-font: "Montserrat";
 
@@ -20,13 +20,37 @@ body {
     font-size: 1.2rem;
     line-height: 1.5;
     margin: 0;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;      
 }
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+  }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--accent1-color);
     margin: 0;
 }
+
+h2 {
+    text-align: center;
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    color: var(--paragraph-color-on-color);
+    background-color: var(--paragraph-background-color);
+    
+  }
+  
 
 a {
     color: var(--accent1-color);
@@ -42,4 +66,39 @@ a:hover {
     margin: 0 auto;
     padding: 0 20px;
 }
-
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .colors th {
+    background-color: #999;
+  }
+  .colors td {
+    width: 25%;
+    height: 3em;
+  }
+  .primary {
+    background-color: var(--primary-color);
+    /*color to border*/
+    border: 1px solid var(--accent2-color);
+  }
+  .secondary {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--accent2-color);
+  }
+  .accent1 {
+    background-color: var(--accent1-color);
+    border: 1px solid var(--accent2-color);
+  }
+  .accent2 {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+  }
+  p.colored {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+  }
+  
