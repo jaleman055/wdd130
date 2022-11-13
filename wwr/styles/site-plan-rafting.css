@@ -20,16 +20,19 @@ Fonts are separated by a & */
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #00343d; /* headlines on a white background */
   --headline-color-on-color: white; /* headlines on a colored background */
-  --paragraph-color-on-white: #00343d; /* paragraph text on a white background */
+  --paragraph-color-on-white: #01181d; /* paragraph text on a white background */
   --paragraph-color-on-color: white; /* paragraph text on a colored background */
   --paragraph-background-color: #396e94;
   --nav-link-color: #d0e1f0;
   --nav-background-color: #00343d;
-  --nav-hover-link-color: #d0e1f0;
+  --nav-hover-link-color: #151718;
   --nav-hover-background-color: #ffd633;
+  --footer-background-color: #242e30;
+
 }
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
+
 
 body {
   max-width: 960px;
@@ -74,6 +77,7 @@ p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color);
   padding: 1em;
+  font-size: 1.2em;
 }
 .colors {
   width: 100%;
@@ -113,6 +117,8 @@ nav {
 nav {
   list-style-type: none;
   display: flex;
+  justify-content: space-around;
+
 }
 nav a {
   padding: 1em;
@@ -171,4 +177,32 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+/*footer*/
+footer {
+  background-color: var(--footer-background-color);
+  color: #d0e1f0;
+  padding: 1em;
+  text-align: center;
+  padding: 25px 50px;
+  margin-top: 100px; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+footer > p {
+  color: #d0e1f0;
+}
+footer > p > a {
+  color: #d0e1f0;
+}
+
+footer > p > a:visited {
+  color: #d0e1f0;
+}
+footer > p > a:hover {
+  color: #151718;
+  background-color: #ffd633;
 }
