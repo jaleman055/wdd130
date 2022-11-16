@@ -350,3 +350,42 @@ nav a {
       margin-top: 25px;
   }
 }
+/*form styling*/
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 50%;
+}
+
+form input {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #6f7364;
+}
+
+form textarea {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #6f7364;
+}
+
+form button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #6f7364;
+  background-color: #6f7364;
+  color: white;
+}
+
+form button:hover {
+  background-color: #e9176b;
+  color: white;
+}
+
