@@ -354,11 +354,11 @@ nav a {
 form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: baseline;
   align-items: center;
   margin: 0 auto;
   padding: 0;
-  width: 50%;
+  width: 100%;
 }
 
 form input {
@@ -378,6 +378,7 @@ form textarea {
 form button {
   margin: 10px;
   padding: 10px;
+  align-items: center;
   border-radius: 5px;
   border: 1px solid #6f7364;
   background-color: #6f7364;
@@ -388,9 +389,39 @@ form button:hover {
   background-color: #e9176b;
   color: white;
 }
+label {
+  /* To make sure that all labels have the same size and are properly aligned */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+  }
+  textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+    /* To give enough room to type some text */
+    height: 5em;
+  }
+
+  form li + li {
+    margin-top: 1em;
+  }
+  .button {
+    /* To position the buttons to the same position of the text fields */
+    padding-left: 90px; /* same size as the label elements */
+    /* same size as the label elements */
+  }
+
+  button {
+    /* This extra margin represent roughly the same space as the space between the labels and their text fields */
+    
+    /*align button to the center of textareas*/
+    margin-left: 90px;
+    
+  }
+
 
 #feedback {
-  background-color: antiquewhite;
+  background-color: rgb(17, 10, 0);
   position: absolute;
   top: 0;
   left: 0;
@@ -398,7 +429,4 @@ form button:hover {
   padding: .5em;
   /* make this element invisible until we are ready for it */
   display: none;      
-}
-.moveDown {
-  margin-top: 3em;
 }
