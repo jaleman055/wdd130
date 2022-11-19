@@ -5,8 +5,9 @@
 :root {
     --primary-color: #343637;
     --secondary-color: #0C0C0C;
-    --accent1-color: #A2221D;
-    --accent2-color: #B7BFC1;
+    --accent1-color: #d12d27;
+    --accent2-color: #c6cdcf;
+    --accent3-color: #bf3d38;
     --paragraph-background-color: #292f31;
     --heading-font: "Open Sans";
     --paragraph-font: "Montserrat";
@@ -33,9 +34,21 @@ img {
     max-width: 300px;
   }
 
-h1, h2, h3, h4, h5, h6 {
+  #logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+  }
+
+h1, h2, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--accent1-color);
+    margin: 0;
+}
+
+h3 {
+    font-family: var(--paragraph-font);
+    color: var(--accent3-color);
     margin: 0;
 }
 
@@ -109,3 +122,31 @@ a:hover {
     color: var(--paragraph-color-on-color);
   }
   
+/*footer*/
+footer {
+  background-color: var(--footer-background-color);
+  color: #d0e1f0;
+  padding: 1em;
+  text-align: center;
+  padding: 25px 50px;
+  margin-top: 100px; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+footer > p {
+  color: #d0e1f0;
+}
+footer > p > a {
+  color: #d0e1f0;
+}
+
+footer > p > a:visited {
+  color: #d0e1f0;
+}
+footer > p > a:hover {
+  color: #151718;
+  background-color: #ffd633;
+}
