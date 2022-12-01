@@ -16,7 +16,7 @@ header {
   background-color: var(--primary-color);
   color: var(--accent2-color);
   font-family: var(--heading-font);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 1rem;
   text-align: center;
   display: grid;
@@ -63,6 +63,57 @@ img {
   justify-self: center;
   align-self: center;
 }
+/*work_exp class*/
+
+.work_exp {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*resume image title overlay*/
+* {
+  box-sizing: border-box;
+}
+
+.container_resume {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.image_resume {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay_resume {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container_resume:hover .overlay_resume {
+  opacity: 1;
+}
+
 /*logo_home Fade in Overlay*/
 
 .container {
@@ -84,9 +135,9 @@ img {
   left: 0;
   right: 10;
   height: 100%;
-  width: 100%;
+  width: 115%;
   opacity: 0;
-  transition: .8s ease;
+  transition: 0.8s ease;
   background-color: #e6eaec;
 }
 
@@ -108,7 +159,6 @@ img {
 }
 
 /* end of logo_home Fade in Overlay*/
-
 
 h1,
 h2,
