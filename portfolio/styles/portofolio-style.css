@@ -63,6 +63,52 @@ img {
   justify-self: center;
   align-self: center;
 }
+/*logo_home Fade in Overlay*/
+
+.container {
+  position: relative;
+  width: 25%;
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 10;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .8s ease;
+  background-color: #e6eaec;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: rgb(5, 5, 5);
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* end of logo_home Fade in Overlay*/
+
 
 h1,
 h2,
