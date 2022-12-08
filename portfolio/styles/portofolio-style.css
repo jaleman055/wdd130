@@ -3,7 +3,7 @@
 
 :root {
   --primary-color: #343637;
-  --secondary-color: #0c0c0c;
+  --secondary-color: #171717;
   --accent1-color: #d12d27;
   --accent2-color: #c6cdcf;
   --accent3-color: #bf3d38;
@@ -13,7 +13,7 @@
 }
 
 header {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: var(--accent2-color);
   font-family: var(--heading-font);
   font-size: 1.3rem;
@@ -66,7 +66,7 @@ img {
 /*work_exp class*/
 
 .work_exp {
-  background-color: var(--secondary-color);
+  background-color: var(--paragraph-background-color);
   padding: 1rem;
   margin: 1rem;
   border-radius: 5px;
@@ -76,6 +76,18 @@ img {
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*proy_com class*/
+
+.proy_com {
+  background-color: var(--paragraph-background-color);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3;
+}
 
 /*resume image title overlay*/
 * {
@@ -184,7 +196,7 @@ header {
   padding: 1em;
   text-align: center;
   color: var(--paragraph-color-on-color);
-  background-color: var(--paragraph-background-color);
+  /*background-color: var(--paragraph-background-color);*/
 }
 
 a {
