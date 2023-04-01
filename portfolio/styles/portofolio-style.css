@@ -21,7 +21,7 @@ header {
   text-align: center;
   display: grid;
   grid-template-columns: 10% 80%;
-  grid-template-rows: 70% 30%;
+  grid-template-rows: 40% 30% 30%;
   grid-template-areas: "logo" "logo nav nav nav";
 }
 
